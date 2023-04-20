@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Lobster|Montserrat|Roboto');
+
+.movie-card{
+  background-size:40em;
+  background-position: left;
+  width: 100%;
+  margin:auto;
+  padding: 20px 30px 20px 15px;
+  border-radius: 10px;
+  background-blend-mode: multiply;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.5);
+  transition: all 0.5s ease;
+}
+.movie-card:hover{
+    transform: scale(1.02);
+}
+
+.card-overlay {
+    background: linear-gradient(to right, rgba(243, 219, 227, 0) 0%, #f3d9e4 60%, #f3d9e4 100%);
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.card-overlay-alt {
+    background: linear-gradient(to left, rgba(243,219,227, 0.2) 0%, #f3d9e4 60%, #f3d9e4 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.card-alt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+.movie-card-description{
+  width: 450px;
+  color: #7C5A50;
+}
+.movie-title{
+  margin: 0;
+  font-family: Montserrat;
+}
+.movie-subtitle{
+  margin-top: 5px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.movie-shorts{
+  font-family: Roboto;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.watch-btn{
+  width: 200px;
+  font-family: Fira Sans;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #7C5A50;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  color: #7C5A50;
+  transition: all 0.5s ease;
+}
+
+.watch-btn:hover{
+  color: #ad9494;
+  border: 1px solid #ad9494;
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px){
+  .movie-card{
+    background-size:35em;
+    background-position:top;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px 20px 15px;
+  }
+  .card{
+    flex-direction: row;
+    height: 25em;
+  }
+  .card-alt{
+    flex-direction: row;
+    height: 25em;
+    align-items: flex-end;
+  }
+  .movie-card-description{
+    color: #f3d9e4;
+    width: 450px;
+    /* height: 100%; */
+  }
+  .card-overlay {
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.2) 0%, #1d1c1dd4 70%, #f3d9e498 100%);
+  }
+  .card-overlay-alt {
+    background: linear-gradient(to bottom, rgba(243,219,227, 0.2) 0%, #1d1d1dd4 70%, #f3d9e498 100%);
+  }
+  
+  .movie-title{
+    font-size:bold;
+  }
+  .movie-subtitle{
+    font-size: medium;
+    margin-top: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  .movie-shorts{
+    font-size: small;
+    font-family: Roboto;
+    text-align: justify;
+  }
+  .watch-btn{
+    width: 100px;
+    color: #7C5A50;
+    border: 0px solid #7C5A50;
+    border-radius: 5px;
+    background-color: #f3d9e4;
+  }
+
+  .watch-btn:hover{
+    color: #f3d9e4;
+    border: 0px solid #7C5A50;
+    background-color: white;
+  transform: scale(1.05);
+}
+
+  
+}
+@media screen and (max-width: 992px){
+    .movie-card{
+        /* background-size: 25em; */
+        background-position: left;
+    }
+    .movie-card-description{
+        width: 300px;
+      }
+}
