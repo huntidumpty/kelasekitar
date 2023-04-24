@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 768px){
   .movie-card{
-    background-size:35em;
+    background-size:15em;
     background-position:top;
     width: 100%;
     box-sizing: border-box;

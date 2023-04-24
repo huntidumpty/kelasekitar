@@ -29,6 +29,23 @@
     />
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/card.css">
+    <style>
+      .youtube-video {
+          display: inline-block;
+          overflow: hidden;
+      }
+      .youtube-video img {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.25s ease-in-out;
+      }
+      .youtube-video:hover img {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+          filter: blur(3px);
+      }
+    </style>
   </head>
   <body id="page-top">
 
@@ -107,11 +124,7 @@
         </div>
         <div class="row">
         </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <!-- collaboration -->
+        <!-- collaboration -->
       <div class="movie-card" style="background-image: url('https://i.ibb.co/31s0q9v/Join-Collaboration.jpg'); background-position: center left; background-size: 45em;" >
         <div class="card-overlay">
         </div>
@@ -127,7 +140,7 @@
        </div>
       </div>
       <!-- Donation -->
-      <div class="movie-card" style="background-image: url('https://i.ibb.co/kBy8VYT/Join-Donation.jpg'); background-position: top right; background-size: 45em;" >
+      <div class="movie-card" style="background-image: url('https://i.ibb.co/kBy8VYT/Join-Donation.jpg'); background-position: top right; background-size: 40em;" >
         <div class="card-overlay-alt">
         </div>
        <div class="card-alt">
@@ -162,14 +175,18 @@
        <div class="card-alt">
           <div class="movie-card-description">
             <h1 class="movie-title">Edu Hero</h1>
-            <br><br><br><br><br><br><br>
-            <!-- <p class="movie-subtitle">Ingin membantu dalam hal kebaikan untuk memajukan kualitas pendidikan anak-anak di Indonesia?</p>
-            <p class="movie-shorts">Sobat sekitar bisa lho berdonasi bersama kami! Karena kita akan semakin bernilai dan bahagia jika kita bisa memberi sebagian kecil dari apa yang kita miliki.
-            </p> -->
-            <a data-bs-toggle="modal" href="#"><button type="button" class="watch-btn"><i class="fa fa-circle-info" aria-hidden="true"></i> &emsp; More</button></a>
+            <p class="movie-subtitle">Hallo sobat sekitar di seluruh Indonesia!</p>
+            <p class="movie-shorts">Tau gak sih? Ternyata superhero ngga hanya di film atau dunia khayalan belaka lho. Superhero memang nyata dan ada di sekitar kita. Yup, kita sendiri bisa menjadi superhero di lingkungan tempat tinggal kita masing-masing. 
+              Yuk daftarkan diri kamu bersama teman-teman di sekitar tempat tinggal kamu untuk menjadi KS Edu Hero!
+            </p>
+            <a data-bs-toggle="modal" href="#eduHeroModal"><button type="button" class="watch-btn"><i class="fa fa-circle-info" aria-hidden="true"></i> &emsp; More</button></a>
           </div>
        </div>
       </div>
+      </div>
+    </section>
+
+    <div class="container">
 
 
       <!-- <div class="blog-card">
@@ -261,8 +278,8 @@
             <div class="portfolio-item">
               <a
                 class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#"
+                target=”_blank”
+                href="https://goo.gl/maps/jya7hwhb52HtmCB7A"
               >
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -290,8 +307,8 @@
             <div class="portfolio-item">
               <a
                 class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal2"
+                target=”_blank”
+                href="https://goo.gl/maps/HMJxmvMjUL4YzHD39"
               >
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -318,8 +335,8 @@
             <div class="portfolio-item">
               <a
                 class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal3"
+                target=”_blank”
+                href="https://goo.gl/maps/Fr2JwsTmq5jAQtH16"
               >
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
@@ -353,9 +370,43 @@
             Our Gallery
           </h3>
         </div>
+        <!-- instagram -->
         <div class="row">
-          <div class="embedsocial-hashtag" data-ref="f99f1704d43222e61bc0947ace7acea3b5cb149b"> <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial<span>→</span> </a> </div>
+          <div class="embedsocial-hashtag" data-ref="f99f1704d43222e61bc0947ace7acea3b5cb149b"><a class="feed-powered-by-es feed-powered-by-es-slider-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial">Widget by EmbedSocial<span>→</span></a></div>
         </div>
+        <!-- youtube -->
+        <div class="row">
+            <div class="col-md-3">
+              
+                <a class="youtube-video" href="https://www.youtube.com/watch?v=5FMHV88MIe4" target="_blank">
+                  <iframe class="youtube-video"  src="https://www.youtube.com/embed/5FMHV88MIe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <!-- <p>Joshua Aaron // Immanuel (Sea of Galilee Lyric Video)</p> -->
+            </div>
+        
+            <div class="col-md-3">
+                <a class="youtube-video" href="https://www.youtube.com/watch?v=sWSKtoURGAg" target="_blank">
+                  <iframe class="youtube-video" src="https://www.youtube.com/embed/3hKi4KwZiYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <!-- <p>Quão Grande é o nosso Deus / Gadol Elohai por Joshua Aaron em Jerusalém</p> -->
+            </div>
+        
+            <div class="col-md-3">
+                <a class="youtube-video" href="https://www.youtube.com/watch?v=BGW62zTwfiw" target="_blank">
+                  <iframe class="youtube-video" src="https://www.youtube.com/embed/XUhuS7GFDdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <!-- <p>Joshua Aaron - Hoshiana (Official Music Video) Jerusalem</p> -->
+            </div>
+            
+            <div class="col-md-3">
+                <a class="youtube-video" href="https://www.youtube.com/watch?v=KSrUGUSKTqs" target="_blank">
+                  <iframe class="youtube-video" src="https://www.youtube.com/embed/WyZVtTikUZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </a>
+                <!-- <p>Dr. Enéas - Distância entre os planetas - O que é 1 trilhão?</p> -->
+            </div>
+        
+        </div>
+
       </div>
     </section>
 
@@ -491,10 +542,10 @@
     </footer>
     
     <!-- Modals-->
-    <!-- Portfolio item 1 modal popup-->
+    <!-- Edu Hero Modal-->
     <div
       class="portfolio-modal modal fade"
-      id="portfolioModal1"
+      id="eduHeroModal"
       tabindex="-1"
       role="dialog"
       aria-hidden="true"
@@ -509,40 +560,47 @@
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
+                  <h2 class="text-uppercase">Edu Hero</h2>
+                  <br>
                   <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/1.jpg"
+                    class="img-thumbnail"
+                    src="https://i.ibb.co/8z1rrZV/EDU-HERO.jpg"
                     alt="..."
                   />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  <p class="text-md-start text-sm-start item-intro text-muted">
+                    KS Edu Hero merupakan community franchise kelasekitar untuk para pemuda/i Indonesia yang ingin berkontribusi nyata di dunia pendidikan dan menciptakan dampak positif untuk pengembangan diri anak-anak di sekitaran rumah.
                   </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Threads
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Illustration
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                  <p class="text-md-start text-sm-start "><strong>Persyaratan:</strong></p>
+                  <div class="text-md-start text-sm-start ">
+                    <ul class="list-inline">
+                      <li>
+                        -Bersedia komitmen dan bertanggungjawab mengembangkan komunitas
+                      </li>
+                      <li>
+                        -Memiliki anggota tim yang terdiri dari 4-8 orang
+                      </li>
+                      <li>
+                        -Berusia 18-30 tahun
+                      </li>
+                      <li>
+                        -Mahasiswa aktif dan/atau S1 (minimal)
+                      </li>
+                      <li>
+                        -Menyukai dunia pendidikan anak
+                      </li>
+                      <li>
+                        -Memiliki min.1 tempat untuk dijadikan kelas
+                      </li>
+                      <li>
+                        -Memiliki pengalaman menjadi Volunteer (relawan) menjadi nilai plus
+                      </li>
+                    </ul>
+                  </div>
+                  <p><strong>Klik link dibawah untuk daftar</strong></p>
+                  <a target="_blank" href="https://forms.gle/zVVFNewJ1yHr5jLE8"><button class="btn btn-primary btn-xl text-uppercase">
+                    JOIN
+                  </button></a>
+
                 </div>
               </div>
             </div>
@@ -864,6 +922,6 @@
     <!-- galery elfsight -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <!-- gallery embed social  -->
-    <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+    <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
   </body>
 </html>
