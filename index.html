@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <!-- <meta charset="utf-8" /> -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -29,21 +29,49 @@
     />
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/card.css">
+    <!-- youtube  -->
     <style>
-      .youtube-video {
-          display: inline-block;
-          overflow: hidden;
+      .cont {
+        text-align: center;
+        /* padding: 10px; */
       }
-      .youtube-video img {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-          -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.25s ease-in-out;
+
+      .demo-gallery > ul {
+        margin-bottom: 0;
+        padding-left: 0px;
       }
-      .youtube-video:hover img {
-          -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-          filter: blur(3px);
+
+      .demo-gallery > ul > li {
+        /* margin-bottom: 15px; */
+        width: 300px;
+        display: inline-block;
+        /* margin-right: 5px; */
+        /* list-style: outside none none; */
+      }
+
+      .demo-gallery > ul > li a {
+        border: 1px solid #7C5A50;
+        border-radius: 10px 10px 10px 10px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        float: left;
+      }
+
+      .demo-gallery > ul > li a > iframe {
+        -webkit-transition: -webkit-transform 0.15s ease 0s;
+        -moz-transition: -moz-transform 0.15s ease 0s;
+        -o-transition: -o-transform 0.15s ease 0s;
+        transition: transform 0.15s ease 0s;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        height: 100%;
+        width: 100%;
+      }
+
+      .demo-gallery > ul > li a:hover > iframe {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
       }
     </style>
   </head>
@@ -97,6 +125,7 @@
         <img src="https://i.ibb.co/WVPVVxS/landing-page.jpg" alt="Background Image">
       </div>
       <div class="container">
+        <br><br>
         <div class="masthead-subheading">
             WELCOME TO KELASEKITAR
         </div>
@@ -107,9 +136,9 @@
             </a>
           </h3>
         </div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#footer"
+        <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#footer"
           >more</a
-        >
+        > -->
       </div>
     </header>
     
@@ -187,8 +216,6 @@
     </section>
 
     <div class="container">
-
-
       <!-- <div class="blog-card">
         <div class="meta">
           <div class="photo" style="background-image: url(https://i.ibb.co/31s0q9v/Join-Collaboration.jpg)"></div>
@@ -373,40 +400,37 @@
         <!-- instagram -->
         <div class="row">
           <div class="embedsocial-hashtag" data-ref="f99f1704d43222e61bc0947ace7acea3b5cb149b"><a class="feed-powered-by-es feed-powered-by-es-slider-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial">Widget by EmbedSocial<span>→</span></a></div>
+          
         </div>
-        <!-- youtube -->
-        <div class="row">
-            <div class="col-md-3">
-              
-                <a class="youtube-video" href="https://www.youtube.com/watch?v=5FMHV88MIe4" target="_blank">
-                  <iframe class="youtube-video"  src="https://www.youtube.com/embed/5FMHV88MIe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </a>
-                <!-- <p>Joshua Aaron // Immanuel (Sea of Galilee Lyric Video)</p> -->
-            </div>
-        
-            <div class="col-md-3">
-                <a class="youtube-video" href="https://www.youtube.com/watch?v=sWSKtoURGAg" target="_blank">
-                  <iframe class="youtube-video" src="https://www.youtube.com/embed/3hKi4KwZiYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </a>
-                <!-- <p>Quão Grande é o nosso Deus / Gadol Elohai por Joshua Aaron em Jerusalém</p> -->
-            </div>
-        
-            <div class="col-md-3">
-                <a class="youtube-video" href="https://www.youtube.com/watch?v=BGW62zTwfiw" target="_blank">
-                  <iframe class="youtube-video" src="https://www.youtube.com/embed/XUhuS7GFDdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </a>
-                <!-- <p>Joshua Aaron - Hoshiana (Official Music Video) Jerusalem</p> -->
-            </div>
-            
-            <div class="col-md-3">
-                <a class="youtube-video" href="https://www.youtube.com/watch?v=KSrUGUSKTqs" target="_blank">
-                  <iframe class="youtube-video" src="https://www.youtube.com/embed/WyZVtTikUZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </a>
-                <!-- <p>Dr. Enéas - Distância entre os planetas - O que é 1 trilhão?</p> -->
-            </div>
-        
+      </div>
+      <!-- youtube -->
+      <div class="cont">
+    
+        <div class="demo-gallery">
+          <ul id="lightgallery">
+            <li>
+              <a href="">
+                <iframe src="https://www.youtube.com/embed/5FMHV88MIe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <iframe src="https://www.youtube.com/embed/3hKi4KwZiYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </a>
+            </li>
+            <li >
+              <a href="">
+                <iframe src="https://www.youtube.com/embed/XUhuS7GFDdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <iframe src="https://www.youtube.com/embed/WyZVtTikUZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+              </a>
+            </li>
+          </ul>
         </div>
-
       </div>
     </section>
 
@@ -560,7 +584,7 @@
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Edu Hero</h2>
+                  <h2 class="text-uppercase" style="font-size: 30px;">Edu Hero</h2>
                   <br>
                   <img
                     class="img-thumbnail"
@@ -627,16 +651,13 @@
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Collaboration</h2>
+                  <h2 class="text-uppercase" style="font-size: 30px;">Collaboration</h2>
                   <br>
                   <img
                     class="img-thumbnail"
                     src="https://i.ibb.co/31s0q9v/Join-Collaboration.jpg"
                     alt="..."
                   />
-                  <p class="text-md-start text-sm-start item-intro text-muted">
-                    Sobat sekitar dapat mengajukan kerjasama lho! Karena kami yakin  pekerjaan besar membutuhkan banyak bakat, kemampuan, energi positif dan kompetensi terbaik. Jika kita semua menyatu dalam kolaborasi dan sinergi, kita semua menjadi kuat dan mampu menghasilkan karya terbaik (kutipan Djajendra)
-                  </p>
                   <p class="text-md-start text-sm-start "><strong>Bentuk kolaborasi</strong></p>
                   <div class="text-md-start text-sm-start ">
 
@@ -694,7 +715,7 @@
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Donation</h2>
+                  <h2 class="text-uppercase" style="font-size: 30px;">Donation</h2>
                   <br>
                   <img
                     class="img-thumbnail"
@@ -753,7 +774,7 @@
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Volunteer</h2>
+                  <h2 class="text-uppercase" style="font-size: 30px;">Volunteer</h2>
                   <img
                     class="img-thumbnail"
                     src="https://i.ibb.co/VBt4DR4/join-volunteer.jpg"
@@ -802,125 +823,18 @@
         </div>
       </div>
     </div>
-    
-    <!-- about us modals  -->
-    <div
-      class="portfolio-modal modal fade"
-      id="aboutUsModal"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <div class="about">
-                    <h2>About Us</h2>
-                    <p class="text-md-start" ><strong>Tentang Komunitas</strong></p>
-                    <p class="text-md-start">Kelasekitar merupakan komunitas pendidikan non-profit yang didirikan sejak 13 Oktober 2018. Pendidikan yang dimaksud lebih berfokus kepada pengembangan diri anakanak usia 7-12 tahun. Komunitas ini sebagai upaya untuk memenuhi kebutuhan anak dalam mengembangkan fundamental skill, kreativitas, dan life skill sesuai dengan perkembangan ilmu pengetahuan dan teknologi.</p>
-                    <p class="text-md-start" >Kelasekitar bermakna bahwa komunitas ini menjadi wadah terselenggarakannya pendidikan non-formal untuk pengembangan diri anak-anak disekitaran rumah. Cara terbaik mempersiapkan generasi yang bermoral, bernilai, dan berkualitas yakni dimulai dengan menjadi agen perubahan di sekitar kita.</p>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start" ><strong>Visi Komunitas</strong></p>
-                    <p class="text-md-start">Menjadi komunitas pendidikan yang mampu membentuk pribadi anak yang bermoral, terampil, mandiri, kreatif, dan berwawasan global</p>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Misi Komunitas</strong></p>
-                    <ul  class="text-md-start">
-                    <li>Memperkuat dan meningkatkan kecerdasan spiritual anak melalui pengamalan dan pembiasaan rutin ajaran agama</li>
-                    <li>Menciptakan kegiatan pembelajaran yang kondusif, kreatif, inovatif, dan efektif</li>
-                    <li>Mengembangkan kemampuan berbahasa Inggris</li>
-                    <li>Mengembangkan kreativitas anak baik dari cara berfikir, problem solving, menciptakan karya &amp; kreasi</li>
-                    <li>Membina life skill anak melalui kegiatan pembiasaan dan pengembangan diri yang berkesinambungan</li>
-                    <li>Menjalin kerjasama dengan stakeholder di lingkungan sekitar demi terselenggaranya kelasekitar</li>
-                    </ul>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Tujuan Komunitas</strong></p>
-                    <ul  class="text-md-start">
-                      <li>Menghasilkan anak-anak yang dapat menerapkan ajaran agama dalam kehidupan sehari-hari</li>
-                      <li>Menciptakan pembelajaran yang kondusif, kreatif, dan inovatif</li>
-                      <li>Menghasilkan anak-anak yang terampil berbahasa Inggris</li>
-                      <li>Menghasilkan anak-anak yang kreatif dan berdaya guna</li>
-                      <li>Menghasilkan anak-anak yang berani menghadapi problema kehidupan secara proaktif mencari serta menemukan solusi &amp; akhirnya mampu mengatasinya</li>
-                      <li>Menciptakan komunitas kelasekitar di lingkungan sekitar</li>
-                    </ul>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Sistem Pembelajaran</strong></p>
-                    <p class="text-md-start">Komunitas kelasekitar diselenggarakan setiap hari Minggu pukul 16.00-17.30 WIB. Dalam proses belajar-mengajar di kelasekitar terdapat kakak pengajar dan kakak pendamping yang bertugas memberi materi pelajaran dan mengawasi anak-anak dari sebelum proses belajar-mengajar hingga kegiatan kelas selasai. Kakak pengajar kelasekitar merupakan team dari kelasekitar yang berperan juga sebagai kakak pendamping untuk anak-anak.</p>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Model Pembelajaran </strong></p>
-                    <ul  class="text-md-start">
-                      <li>Student centered learning</li>
-                      <li>Problem based learning</li>
-                      <li>Project based learning</li>
-                    </ul>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Metode Pembelajaran</strong></p>
-                    <ul  class="text-md-start">
-                      <li>Diskusi</li>
-                      <li>Eksperimen</li>
-                      <li>Demonstrasi</li>
-                      <li>Bermain peran (role play)</li>
-                      <li>Simulasi Permainan (games)</li>
-                      <li>Studi kasus</li>
-                      <li>Tanya jawab</li>
-                    </ul>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Program Kelas</strong></p>
-                    <ol class="text-md-start">
-                    <li>Fun Science Class</li>
-                    </ol>
-                    <p class="text-md-start">Untuk mengembangkan kemampuan kognitif. Materi yang diajarkan bersifat eksploratif dan eksperimental. Seperti, mencari tahu cara pengelolaan, pembuatan sesuatu, pengetahuan tentang alam, dsb</p>
-                    <ol class="text-md-start" start="2">
-                    <li>Life Skill Class</li>
-                    </ol>
-                    <p class="text-md-start">Untuk mengembangkan nilai moral dan sikap/attitude sedini mungkin tentang pelajaran kehidupan yang bisa diterapkan dalam sehari-hari. Seperti, peraturan, hak dan kewajiban, semangat, kesopanan, bullying, dsb.</p>
-                    <ol class="text-md-start" start="3">
-                    <li>Eksi Class</li>
-                    </ol>
-                    <p class="text-md-start">Untuk mengembangkan kreatifitas dan fleksibilitas anak. Baik dari cara berfikir dan menghasilkan suatu karya original anak. Seperti, kreasi prakarya, kesenian, mini drama, dsb.</p>
-                    <!-- <p>&nbsp;</p> -->
-                    <p class="text-md-start"><strong>Sistem Penilaian </strong></p>
-                    <p class="text-md-start">Bentuk penilaian yang digunakan oleh kakak pengajar antara lain dalam bentuk pengamatan &amp; hasil karya anak yang dilakukan selama anak mengikuti kegiatan kelas (tidak ada tugas rumah). Proses pengumpulan dan pengolahan informasi hasil belajar anak dalam bentuk e-booklet via link online group Whatsapp orang tua.</p>
-                    <p class="text-md-start">Selain memuat hasil belajar anak, di dalam e-booklet juga terdapat informasi seputar dunia Pendidikan dan konten <em>parenting</em>. Informasi tersebut bertujuan untuk memberi pengetahuan &amp; kesadaran orangtua terhadap pentingnya pendidikan informal, formal, maupun nonformal. Serta pentingnya mengembangkan soft skill anak.</p>
-                  </div>
-                  
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Tutup
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://kit.fontawesome.com/1f4cb7cc81.js" crossorigin="anonymous"></script>
-
-    <!-- gallery woxo -->
-    <script src="https://cdn2.woxo.tech/a.js#64354fb881a41f0c87c1dbcf" async data-usrc></script>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    <!-- galery elfsight -->
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <!-- gallery embed social  -->
     <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
   </body>
