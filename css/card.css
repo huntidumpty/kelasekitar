@@ -3,19 +3,26 @@
 .movie-card{
   background-size:40em;
   background-position: left;
-  width: 100%;
+  width: auto;
   margin:auto;
   padding: 20px 30px 20px 15px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-blend-mode: multiply;
   position: relative;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   z-index: 1;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.5);
+  /* box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1); */
   transition: all 0.5s ease;
 }
-.movie-card:hover{
+/* .movie-card:hover{
     transform: scale(1.02);
+} */
+.gambar{
+  transition: all 0.5s ease;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.9);
+}
+.gambar:hover{
+  transform: scale(1.02);
 }
 
 .card-overlay {
@@ -77,6 +84,7 @@
   margin: auto;
   padding: 10px;
   border: 1px solid #7C5A50;
+  /* border-radius: 1px solid #7C5A50; */
   background: transparent;
   font-size: 15px;
   cursor: pointer;
@@ -85,9 +93,9 @@
 }
 
 .watch-btn:hover{
-  color: #ad9494;
-  border: 1px solid #ad9494;
-  transform: scale(1.05);
+  color: #f787b6;
+  border: 1px solid #f787b6;
+  /* transform: scale(1.02); */
 }
 
 
@@ -134,17 +142,17 @@
     text-align: justify;
   }
   .watch-btn{
-    width: 100px;
-    color: #7C5A50;
-    border: 0px solid #7C5A50;
-    border-radius: 5px;
-    background-color: #f3d9e4;
+    /* width: 100px; */
+    color: #f3d9e4;
+    border: 1px solid #f3d9e4;
+    /* border-radius: 5px;
+    background-color: #f3d9e4; */
   }
 
   .watch-btn:hover{
-    color: #f3d9e4;
-    border: 0px solid #7C5A50;
-    background-color: white;
+    color: #f787b6;
+    border: 2px solid #f787b6;
+    /* background-color: white; */
   transform: scale(1.05);
 }
 
