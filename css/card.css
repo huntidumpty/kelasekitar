@@ -19,7 +19,7 @@
 } */
 .gambar{
   transition: all 0.5s ease;
-  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.9);
+  /* box-shadow: 0 3px 10px 0 rgba(0,0,0,0.9); */
 }
 .gambar:hover{
   transform: scale(1.02);
