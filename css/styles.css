@@ -5492,6 +5492,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   justify-content: center;
+  /* text-align: justify; */
   z-index: 1055;
   display: none;
   width: 100%;
@@ -5593,6 +5594,7 @@ textarea.form-control-lg {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+  text-align: justify;
 }
 
 .modal-body a,h2 {
@@ -9285,7 +9287,7 @@ textarea.form-control-lg {
   }
 
   .text-md-start {
-    text-align: left !important;
+    text-align: justify !important;
   }
 
   .text-md-end {
